@@ -1,0 +1,17 @@
+* {
+    background-color: rgb(62, 26, 220);
+}
+
+nav{
+    display: flex;  
+    justify-content: space-between;
+}
+
+
+
+
+
+
+li {
+    display: inline;
+}
