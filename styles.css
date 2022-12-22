@@ -1,17 +1,31 @@
 * {
-    background-color: rgb(62, 26, 220);
+    background-color: #4267B2;
+    color:antiquewhite;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+main {
+    margin:0;
+}
+
+section {
+    margin: 0;
 }
 
 nav{
-    display: flex;  
-    justify-content: space-between;
+    display: flex;  /*flex used fro justify*/
+    justify-content: space-between;/*Seperated NAV logo name and nav items*/
+    margin: 0;
+}
+
+li {
+    display: inline;/*Used to inline nav tools*/
 }
 
 
 
-
-
-
-li {
-    display: inline;
+/*aligns title to center*/
+.title {
+    text-align: center;
 }
