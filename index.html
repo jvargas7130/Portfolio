@@ -2,46 +2,133 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <script src="https://kit.fontawesome.com/7c5337680b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
-    <title>Portfolio</title>
 </head>
+    <!-- -----------------Home page ------------- -->
 <body>
-    <nav>
-        <h2 id="logo">Jesse Vargas</h2>
-        <ul class="nav-list">
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
-    <div class="title">
-        <h1>Front End Engineer</h1>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">   
+                <nav>
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li> 
+                        <li><a href="#projects">Projects</a></li> 
+                        <li><a href="#contact">Contact</a></li> 
+                    </ul>  
+                </nav>   
+                <div class="social-icons">
+                    <a href="https://linkedin.com/in/jesusvargas7130"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                   
+                </div>
+            </nav>
+          
+        </div>
     </div>
-    <main>
-      
-        <section class="about-me">
-            <h2>About</h2>
 
-        </section>
-
-        <section class="projects">
-            <h2>Projects</h2>
-
-        </section>
-
-        <section class="contact">
-            <h2>Contact</h2>
-
-        </section>
-
-
-
-    </main>
-    
-    
-    
-    
+   <div class="landing">
+        <div class="container">
+            <div class="landing-text">
+                <p>Front End Developer and IT specialist</p>
+                <h1>Hi, I'm <span>Jesus Vargas</span> </h1>
+            </div>
+        </div>
+       
+   </div>
 </body>
+<!-- -----------about----------- -->
+<div id="about">
+    <div class="about-container container">
+        <div class="about-image">
+            <img src="images/about.png" alt="">
+        </div>
+        <div class="about-description">
+            <h1>About</h1>
+            <p>
+                I'm a California-based Front End Developer practicing web apps and website building
+                using Javascript, HTML, and CSS style. I am currently working as an IT Technician for a security company 
+                named BTI Communications Group providing technical support to clients and performing monitoring and maintenance of server 
+                based environments. I have a passion for technology and enjoy solving problems. I 
+        
+
+            </p>
+            <div class="tab-titles">
+                <p class="tab-links skills-tab active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links experience-tab" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links education-tab" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents" id="skills">
+                <ul>
+                 
+                    <li><span>Front End Web Developer</span><br>Building websites with Javascript,CSS and html</li>
+                    <li><span>IT Specialist</span><br>Solving network and helpdesk issues</li>
+                </ul>
+            </div>
+            <div class="tab-contents " id="experience">
+                <ul>
+                    <li><span>IT Helpdesk and onsite Technician</span><br><span>BTI Communications Group</span><br>2021 to Present</li>
+                    <li><span>IT Helpdesk and onsite Technician</span><br><span>IT Traininig & Consulting </span><br>2019-2021</li>
+                   
+                   
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>Cal State Long Beach University</span><br><span>Bachelors Degree in Computer Science</span><br>2015-2019</li>
+                    <li><span>Rio Hondo College</span><br><span>Associates Degree in Math and Science</span><br>2010-2015</li>
+                    
+                </ul>
+            </div>
+            
+        </div>
+
+
+    </div>
+    <!-- --------------Projects-------------------- -->
+    <div id="projects">
+        <h1>Projects</h1>
+        <div class="project-container container">
+           
+            <div class="project">
+                <img src="/images/mypetwebsite.png" alt="">
+                <div class="description">
+                    <h2>My pet project</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Animi dolorum culpa odio, ipsa id vitae facilis modi 
+                        repellendus similique doloribus quo temporibus deleniti. 
+                        Totam, mollitia quas! Quia suscipit rerum aliquid.</p>
+                     <div class="button-link">
+                        <a href="https://finnthecutebeagle.com">Live Site</a>
+                     </div>
+                </div>
+            </div>
+            <div class="project">
+                <img src="/images/myportfolio.png" alt="">
+                <div class="description">
+                    <h2>My Web Portfolio</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Animi dolorum culpa odio, ipsa id vitae facilis modi 
+                        repellendus similique doloribus quo temporibus deleniti. 
+                        Totam, mollitia quas! Quia suscipit rerum aliquid.</p>
+                     <div class="button-link">
+                         <a href="https://finnthecutebeagle.com">Live Site</a>
+                     </div>
+                </div>
+            </div>
+         
+        </div>
+    </div>
+    <!-- --------------------contact---------------------- -->
+    <footer>
+
+    </footer>
+
+    <script type="text/javascript" src="app.js"></script>
+</div>
 </html>
