@@ -37,6 +37,13 @@ p{
    
 }
 
+.logo{
+   background-color: #5a95d8; 
+   color: #FFF;
+   padding: 10px;
+   opacity: 1;
+}
+
 nav li {
     display: inline-block;
     margin: 0 10px;
@@ -69,10 +76,7 @@ nav li {
     
 }
 
-.logo{
-    width: 200px;
-  
-}
+
 
 .landing{
     width: 100%;
