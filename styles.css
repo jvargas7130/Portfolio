@@ -1,7 +1,9 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Cambria, Cochin;
+    font-family: 'Roboto';
+    color: #333333;
+
 }
 
 .container{
@@ -9,24 +11,67 @@
 }
 
 h1{
-    font-size: 40px;
-}
-p{
-    font-size: 20px;
+    font-size: 55px;
+    font-family: "proxima nova bold";
+
 }
 
-a, li{
+a, li, p{
     font-size: 20px;
 }
-#header .container{
-    padding: 0 5%;
+p{
+    opacity: 0.6;
+}
+.header-container{
+    padding: 1% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
 }
 #header{
     background-color: black;
-    height: 100px;
+    height: 87px;
     width: 100%;
     margin: 0;
+   
+}
+
+nav li {
     display: inline-block;
+    margin: 0 10px;
+ }
+ 
+ nav li a {
+
+    color: #FFF;
+    text-decoration: none;
+ }
+ 
+ nav li a:hover {
+     color: #5a95d8;
+     transition: transform 0.4s;
+ }
+
+ .social-icons a{
+   margin: 10px 10px;
+   font-size: 30px;
+}
+
+.social-icons a i{
+    color: white;
+}
+
+.social-icons a i:hover{
+    color:#5a95d8;
+    transition: transform 0.4s;
+    transform: translateY(-10px);
+    
+}
+
+.logo{
+    width: 200px;
+  
 }
 
 .landing{
@@ -38,61 +83,34 @@ a, li{
     max-height: 3000px ; 
 }
 
-#header .social-icons {
-    margin-top: 10px;
+
+
+.landing .landing-text p{
+    font-size: 35px;
+    opacity: 1;
 }
 
-#header .social-icons a{
-   margin: 10px 10px;
-    font-size: 30px;
-    color: white;
-    
-   
-}
-
-#header .social-icons a i:hover{
-    color: red;
-    transition: transform 0.4s;
-    transform: translateY(-10px);
-    
-}
-
-#header .container{
-    height: 10vh;
-    
-}
-
-.logo{
-    width: 200px;
-    margin-bottom: 25px;
-}
-
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-nav li {
-   display: inline-block;
-   margin: 50px 5px;
-}
-
-nav li a {
-color: white;
-   text-decoration: none;
-}
-
-nav li a:hover {
-    color: red;
-    transition: transform 0.4s;
-}
 .landing .landing-text{
     padding-top: 20%;
+    font-size: 50px;
 }
 
 .landing-text span {
     color: #5a95d8;
+}
+
+.resume-download a{
+    background-color: black;
+    padding: 15px;
+    border-radius: 7px;
+    color: white;
+    text-decoration: none;
+    line-height: 30px;
+}
+
+.resume-download a:hover{
+    opacity: 0.6;
+    transition: 0.5s;
 }
 
 /* --------------about------------------- */
@@ -116,6 +134,13 @@ nav li a:hover {
 
 .about-description{
     padding-left: 30px;
+    
+}
+
+.about-description p {
+    line-height: 30px;
+  
+
 }
 
 .tab-titles{
@@ -124,6 +149,11 @@ nav li a:hover {
     margin-bottom: 4%;
     display: flex;
     gap:40px;
+}
+
+.tab-contents{
+    display: flex;
+    line-height: 30px;
 }
 
 .tab-contents ul li{
@@ -141,6 +171,7 @@ nav li a:hover {
 .tab-links{
     cursor: pointer;
     position: relative;
+    color: #333333 !important;
 }
 
 /* 
@@ -172,10 +203,6 @@ nav li a:hover {
     bottom: -8px;
 }
 
-.tab-contents{
-    display: flex;
-}
-
  #experience {
     display: none;
 }
@@ -198,7 +225,7 @@ nav li a:hover {
 }
 .project{
     height: auto;
-    width: 600px;
+    width: 485px;
     display: grid;
     grid-template-rows: 1fr 1fr;
     
@@ -218,21 +245,21 @@ nav li a:hover {
 .project .description{
     height: 100%;
     width: 100%;
-    background-color:#5a95d8;
+    background-color:whitesmoke;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
   
 
 }
 .project .description h2{
-    color:white;
+    color:black;
     padding-top: 15%;
     padding-left: 5%;
     padding-right: 5%;
 }
 
 .project .description p{
-    color:white;
+    color:black;
     padding-top: 3%;
     padding-left: 5%;
     padding-right: 5%;
@@ -244,10 +271,118 @@ nav li a:hover {
 }
 
 .button-link a{
-    background-color: red;
-    padding: 5px;
-    border-radius: 5px;
+    background-color: black;
+    padding: 11px;
+    border-radius: 7px;
     color: white;
     text-decoration: none;
-    line-height: 25px;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.button-link a:hover{
+    opacity: 0.6;
+    transition: 0.5s;
+   
+}
+
+/* ------------------Contact Us-------------------- */
+
+.contact-container{
+    text-align: center;
+}
+
+#contact-title{
+    height: auto;
+    background-color: #333333;
+    width: 100%;
+}
+
+.contact-title{
+    height: auto;
+   
+}
+
+.contact-title h1{
+    color: #FFF;
+}
+
+.contact-title p{
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+#contact-menu{
+    height: auto;
+    background-color: whitesmoke;
+    
+}
+
+
+textarea .name{
+    color: aqua;
+}
+
+form{
+    padding-left: 300px;
+    padding-right: 300px;
+   
+}
+
+form .input{
+    height: 50px;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: bottom;
+    width: 100%;
+    padding-left: 10px;
+    opacity: 0.6;
+    background-color: #FFF;
+}
+
+#message{
+   height: 150px;
+   padding-top: 10px;
+   max-width: 100%;
+   box-sizing: border-box;/*Padding kept breaking widht %100 by expanding box over margin. Adding borderbox contricted box within left and rignt margin*/
+}
+
+#first-name{
+    margin-right: 20px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+#btn{
+    background-color: black;
+    padding: 11px;
+    border-radius: 7px;
+    color: white;
+    text-decoration: none;
+    line-height: 30px;
+    font-size: 14px;
+    width: 100px
+}
+
+#btn:hover{
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+footer{
+    background-color: black;
+    height: auto;
+    text-align: center;
+}
+
+footer p, i{
+    color:white;
 }

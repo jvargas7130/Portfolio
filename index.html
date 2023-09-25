@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <script src="https://kit.fontawesome.com/7c5337680b.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
 </head>
     <!-- -----------------Home page ------------- -->
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
+    <header id="header">
+        <div class="header-container container">
                 <img src="images/logo.png" class="logo">   
                 <nav>
                     <ul>
@@ -23,78 +23,84 @@
                 </nav>   
                 <div class="social-icons">
                     <a href="https://linkedin.com/in/jesusvargas7130"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                   
+                    <a href="https://github.com/jvargas7130"><i class="fa-brands fa-square-github"></i></a>
                 </div>
-            </nav>
-          
         </div>
-    </div>
+    </header>
 
-   <div class="landing">
+   <section class="landing">
         <div class="container">
             <div class="landing-text">
-                <p>Front End Developer and IT specialist</p>
-                <h1>Hi, I'm <span>Jesus Vargas</span> </h1>
+                <h1>Front End Developer and IT specialist</h1>
+                <p>Hi, I'm <strong><span>J</span>esus Vargas</strong> </p>
+                <div class="resume-download">
+                    <a  href="documents/Jesus Vargas  Software Engineer resume.pdf"
+                    download class="btn btn2">Download Resume</a>
+                </div>
+               
             </div>
         </div>
        
-   </div>
+    </section>
 </body>
 <!-- -----------about----------- -->
-<div id="about">
-    <div class="about-container container">
-        <div class="about-image">
-            <img src="images/about.png" alt="">
+    <section id="about">
+        <div class="about-container container">
+            <div class="about-image">
+                <img src="images/about.png" alt="">
+            </div>
+            <div class="about-description">
+                <h1>About</h1>
+                <p>
+                    I'm a California-based Front End Developer practicing web apps and website building
+                    using Javascript, HTML, and CSS style. I am currently working as an IT Technician for a security company 
+                    named BTI Communications Group providing technical support to clients and performing monitoring and maintenance of server 
+                    based environments. I have a passion for technology and enjoy solving problems. I am currently
+                    looking to work as a Software Engineer at an 
+
+                </p>
+                <div class="tab-titles">
+                    <h2 class="tab-links skills-tab active-link" onclick="opentab('skills')">Skills</h2>
+                    <h2 class="tab-links experience-tab" onclick="opentab('experience')">Experience</h2>
+                    <h2 class="tab-links education-tab" onclick="opentab('education')">Education</h2>
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li>
+                            <span>Front End Web Developer</span><br>
+                            <p>Building websites with Javascript,CSS and html</p>
+                        </li>
+                        <li>
+                            <span>IT Specialist</span>
+                            <p>Solving network and helpdesk issues</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents " id="experience">
+                    <ul>
+                        <li>
+                            <span>IT Helpdesk and onsite Technician</span><br><strong>BTI Communications Group</strong> 
+                            <p>2021 to Present</p></li>
+                        <li><span>IT Helpdesk and onsite Technician</span><br><strong>IT Traininig & Consulting </strong>
+                            <p>2019-2021</p></li>
+                    </ul>
+                </div>
+               
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Cal State Long Beach University</span><br><strong>Bachelors Degree in Computer Science</strong>
+                            <p>2015-2019</p></li>
+                        <li><span>Rio Hondo College</span><br><strong>Associates Degree in Math and Science</strong>>
+                            <p>2010-2015 </p></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="about-description">
-            <h1>About</h1>
-            <p>
-                I'm a California-based Front End Developer practicing web apps and website building
-                using Javascript, HTML, and CSS style. I am currently working as an IT Technician for a security company 
-                named BTI Communications Group providing technical support to clients and performing monitoring and maintenance of server 
-                based environments. I have a passion for technology and enjoy solving problems. I 
-        
-
-            </p>
-            <div class="tab-titles">
-                <p class="tab-links skills-tab active-link" onclick="opentab('skills')">Skills</p>
-                <p class="tab-links experience-tab" onclick="opentab('experience')">Experience</p>
-                <p class="tab-links education-tab" onclick="opentab('education')">Education</p>
-            </div>
-            <div class="tab-contents" id="skills">
-                <ul>
-                 
-                    <li><span>Front End Web Developer</span><br>Building websites with Javascript,CSS and html</li>
-                    <li><span>IT Specialist</span><br>Solving network and helpdesk issues</li>
-                </ul>
-            </div>
-            <div class="tab-contents " id="experience">
-                <ul>
-                    <li><span>IT Helpdesk and onsite Technician</span><br><span>BTI Communications Group</span><br>2021 to Present</li>
-                    <li><span>IT Helpdesk and onsite Technician</span><br><span>IT Traininig & Consulting </span><br>2019-2021</li>
-                   
-                   
-                </ul>
-            </div>
-            <div class="tab-contents" id="education">
-                <ul>
-                    <li><span>Cal State Long Beach University</span><br><span>Bachelors Degree in Computer Science</span><br>2015-2019</li>
-                    <li><span>Rio Hondo College</span><br><span>Associates Degree in Math and Science</span><br>2010-2015</li>
-                    
-                </ul>
-            </div>
-            
-        </div>
-
-
-    </div>
-    <!-- --------------Projects-------------------- -->
-    <div id="projects">
+    </section>
+        <!-- --------------Projects-------------------- -->
+    <section id="projects">
         <h1>Projects</h1>
         <div class="project-container container">
-           
             <div class="project">
                 <img src="/images/mypetwebsite.png" alt="">
                 <div class="description">
@@ -117,18 +123,47 @@
                         repellendus similique doloribus quo temporibus deleniti. 
                         Totam, mollitia quas! Quia suscipit rerum aliquid.</p>
                      <div class="button-link">
-                         <a href="https://finnthecutebeagle.com">Live Site</a>
+                         <a href=" https://jvargas7130.github.io/Portfolio/">Live Site</a>
                      </div>
                 </div>
             </div>
          
         </div>
-    </div>
+    </section>
     <!-- --------------------contact---------------------- -->
-    <footer>
+    <section id="contact-title">
+         <div class="container contact-container">
+            <div class="contact-title">
+                <h1>Contact</h1>
+                <p>me through email or social media</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://linkedin.com/in/jesusvargas7130"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/jvargas7130"><i class="fa-brands fa-square-github"></i></a>
+            </div>
+        </div>
+    </section>
+    <section id="contact-menu">
+        <div class="container">
+            <form>
+               <div class="row">
+                    <input id="first-name" class="input" type="text" name="Name" placeholder="Your name" required> 
+                    <input id="email" class="input" type="text"  name="email" placeholder="Your email" required> 
+               </div>
+                <div>
+                    <textarea id="message" class="input" name="subject" placeholder="Your message" ></textarea>
+                </div>
+                <input type="submit" id="btn"  value="Submit">
+            </form>      
+        </div>
+    </section>
 
-    </footer>
+     <footer>
+        <div class="container">
+             <p>Jesse Vargas <i class="fa-solid fa-copyright"></i></p>
+        </div>
+       
+     </footer>
+       <script type="text/javascript" src="app.js"></script>
 
-    <script type="text/javascript" src="app.js"></script>
-</div>
 </html>
