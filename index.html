@@ -7,10 +7,37 @@
     <script src="https://kit.fontawesome.com/7c5337680b.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+   (function(){
+      emailjs.init("i4z3NbmRpvf_qjqjX");
+   })();
+</script>
 </head>
     <!-- -----------------Home page ------------- -->
+
 <body>
-    <header id="header">
+
+    <!-- -------------mobile------------- -->
+   
+<div class="mobile-nav">
+    <a href="#headers" class="active">Home</a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="mobile-nav-links" style="display: none;">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact-title">Contact</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="nav()">
+      <i class="fa fa-bars"></i>
+    </a>
+</div>
+    
+    <header id="headers">
         <div class="header-container container">
                 <p class="logo"><i class="fa-solid fa-microchip"></i> Jesus Vargas</p>
                 <nav>
@@ -19,6 +46,7 @@
                         <li><a href="#about">About</a></li> 
                         <li><a href="#projects">Projects</a></li> 
                         <li><a href="#contact">Contact</a></li> 
+                        <i class="fas fa-regular fa-circle-xmark" onclick="closemenu()"></i>
                     </ul>  
                 </nav>   
                 <div class="social-icons">
@@ -32,7 +60,7 @@
         <div class="container">
             <div class="landing-text">
                 <h1>Front End Developer and IT specialist</h1>
-                <p>Hi, I'm <strong><span>J</span>esus Vargas</strong> </p>
+                <p>Hi, I'm<spam>Jesus Vargas</spam> </p>
                 <div class="resume-download">
                     <a  href="documents/Jesus Vargas  Software Engineer resume.pdf"
                     download class="btn btn2">Download Resume</a>
@@ -42,7 +70,10 @@
         </div>
        
     </section>
-</body>
+
+
+
+
 <!-- -----------about----------- -->
     <section id="about">
         <div class="about-container container">
@@ -100,7 +131,8 @@
         <!-- --------------Projects-------------------- -->
     <section id="projects">
         <h1>Projects</h1>
-        <div class="project-container container">
+        <div class="project-container">
+           
             <div class="project">
                 <img src="/images/mypetwebsite.png" alt="">
                 <div class="description">
@@ -145,15 +177,17 @@
     </section>
     <section id="contact-menu">
         <div class="container">
+            <div id="error_message"></div>
             <form>
                <div class="row">
-                    <input id="first-name" class="input" type="text" name="Name" placeholder="Your name" required> 
-                    <input id="email" class="input" type="text"  name="email" placeholder="Your email" required> 
+                    <input id="name" class="input-text" type="text" name="Name" placeholder="Your name" required> 
+                    <input id="email" class="input-text" type="text"  name="email" placeholder="Your email" required> 
                </div>
                 <div>
-                    <textarea id="message" class="input" name="subject" placeholder="Your message" ></textarea>
+                    <textarea id="message" class="input-text" name="subject" placeholder="Your message" ></textarea>
                 </div>
-                <input type="submit" id="btn"  value="Submit">
+                 <input type="button" id="btn"  value="Submit" onclick="return validation()">  <!-- had to change button type from submit to button to be able to send email  -->
+                <!-- <button type="button" id="btn"  value="Submit" onclick="return validation()"></button> -->
             </form>      
         </div>
     </section>
@@ -165,5 +199,5 @@
        
      </footer>
        <script type="text/javascript" src="app.js"></script>
-
+</body>
 </html>

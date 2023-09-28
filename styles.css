@@ -29,7 +29,7 @@ p{
     justify-content: space-between;
    
 }
-#header{
+header{
     background-color: black;
     height: 87px;
     width: 100%;
@@ -90,7 +90,7 @@ nav li {
 
 
 .landing .landing-text p{
-    font-size: 35px;
+    font-size: 40px;
     opacity: 1;
 }
 
@@ -101,6 +101,7 @@ nav li {
 
 .landing-text span {
     color: #5a95d8;
+    
 }
 
 .resume-download a{
@@ -224,7 +225,8 @@ nav li {
     
 }
 #projects h1{
-    padding: 40px 5%;
+    padding-top: 40px;
+    padding-left: 40px ;
    
 }
 .project{
@@ -236,8 +238,12 @@ nav li {
 }
 .project-container{
     display: flex;
-    justify-content: center;
-    gap: 40px
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom: 40px;
 }
 .project img{
     height: 300px;
@@ -322,27 +328,24 @@ nav li {
     
 }
 
-
-textarea .name{
-    color: aqua;
-}
-
 form{
     padding-left: 300px;
     padding-right: 300px;
    
 }
 
-form .input{
+form .input-text{
     height: 50px;
     border-radius: 8px;
     font-size: 20px;
-    margin-top: 15px;
+    margin-top: 30px;
     margin-bottom: bottom;
     width: 100%;
     padding-left: 10px;
     opacity: 0.6;
     background-color: #FFF;
+    border: #949494 solid 1px;
+    
 }
 
 #message{
@@ -352,8 +355,9 @@ form .input{
    box-sizing: border-box;/*Padding kept breaking widht %100 by expanding box over margin. Adding borderbox contricted box within left and rignt margin*/
 }
 
-#first-name{
+#name{
     margin-right: 20px;
+    box-sizing: border-box;
 }
 
 .row{
@@ -366,6 +370,7 @@ form .input{
 
 
 #btn{
+    margin-top: 15px;
     background-color: black;
     padding: 11px;
     border-radius: 7px;
@@ -389,4 +394,105 @@ footer{
 
 footer p, i{
     color:white;
+}
+.mobile-nav{
+    display: none;
+}
+
+/*Creates contact error div below title of contact us*/
+
+ #error_message{
+    margin-bottom: 20px;
+    padding: 0;
+    background: #fe8b8e;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+}
+@media screen and (max-width: 1024px){
+    *{
+        align-items: center;
+        box-sizing: border-box;
+    }    
+
+    h1{
+        font-size: 55px;
+        font-family: "proxima nova bold";
+    
+    }
+    
+    a, li, p{
+        font-size: 20px;
+    }
+/* ---------mobile menu----------- */
+ 
+    header{
+       display: none;
+    }
+   
+   .logo{
+     display: none;
+   }
+
+    .mobile-nav{
+        display: block;
+        right:0;
+        left: 0;
+        z-index: 2;
+        background-color: black;
+        position: fixed;
+       
+
+    }
+
+    .mobile-nav a{
+        color:#FFF;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+    .mobile-nav a.icon{
+        position: absolute;
+        display: block;
+        right: 0;
+        top:0;
+    }
+    
+    #mobile-nav-links{
+        display: none;
+    }
+/* ---------mobile menu end----------- */
+    .about-description {
+        padding-left: 0; 
+    }
+    .about-image img{
+        max-width:100%;
+        width:100%;
+        height: auto;
+    }
+
+    .about-container{
+        display: block;
+    }
+
+    .tab-titles{
+        justify-content: space-between;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .project-container{
+        margin-left: 0;
+        margin-right: 0;
+        padding: 40px 5%;
+    }
+    .project{
+        margin-bottom: 30px;
+    }
+
+    form{
+        padding: 0;
+    }
 }
