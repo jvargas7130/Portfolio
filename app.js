@@ -13,7 +13,7 @@ var mobileLinks = document.getElementById('mobile-nav-links');
 
 
 
-
+//The function below 
 function opentab(subject){
   console.log( "what: " + subject);
 
