@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,72 +9,69 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
 
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
     <script type="text/javascript">
-   (function(){
-      emailjs.init("i4z3NbmRpvf_qjqjX");
-   })();
-</script>
+        (function () {
+            emailjs.init("i4z3NbmRpvf_qjqjX");
+        })();
+    </script>
 </head>
-    <!-- -----------------Home page ------------- -->
+
+<!-- -----------------Home page ------------- -->
 
 <body>
-
     <!-- -------------mobile------------- -->
-<div id="home"></div>
-<div class="mobile-nav" >
-    <a href="#home" class="active">Home</a>
-    <!-- Navigation links (hidden by default) -->
-    <div id="mobile-nav-links" style="display: none;">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact-title">Contact</a>
+    <div id="home"></div>
+    <div class="mobile-nav">
+        <a href="#home" class="active">Home</a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="mobile-nav-links" style="display: none;">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact-title">Contact</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="nav()">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
-    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-    <a href="javascript:void(0);" class="icon" onclick="nav()">
-      <i class="fa fa-bars"></i>
-    </a>
-</div>
-    
+
     <header id="home">
         <div class="header-container container">
-                <p class="logo"><i class="fa-solid fa-microchip"></i> Jesus Vargas</p>
-                <nav>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li> 
-                        <li><a href="#projects">Projects</a></li> 
-                        <li><a href="#contact-title">Contact</a></li> 
-                    </ul>  
-                </nav>   
-                <div class="social-icons">
-                    <a href="https://linkedin.com/in/jesusvargas7130"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/jvargas7130"><i class="fa-brands fa-square-github"></i></a>
-                </div>
+            <p class="logo"><i class="fa-solid fa-microchip"></i> Jesus Vargas</p>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact-title">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="https://linkediSn.com/in/jesusvargas7130"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/jvargas7130"><i class="fa-brands fa-square-github"></i></a>
+            </div>
         </div>
     </header>
 
-   <section class="landing">
+    <section class="landing">
         <div class="container">
             <div class="landing-text">
                 <h1>Front End Developer and IT specialist</h1>
-                <p>Hi, I'm<spam>Jesus Vargas</spam> </p>
+                <p>Hi, I'm<spam>Jesus Vargas</spam>
+                </p>
                 <div class="resume-download">
-                    <a  href="documents/Jesus Vargas  Software Engineer resume.pdf"
-                    download class="btn btn2">Download Resume</a>
+                    <a href="documents/Jesus Vargas  Software Engineer resume.pdf" download class="btn btn2">Download
+                        Resume</a>
                 </div>
-               
+
             </div>
         </div>
-       
+
     </section>
 
-
-
-
-<!-- -----------about----------- -->
+    <!-- -----------about----------- -->
     <section id="about">
         <div class="about-container container">
             <div class="about-image">
@@ -83,11 +81,12 @@
                 <h1>About</h1>
                 <p>
                     I'm a California-based Front End Developer practicing web apps and website building
-                    using Javascript, HTML, and CSS style. I am currently working as an IT Technician for a security company 
-                    named BTI Communications Group providing technical support to clients and performing monitoring and maintenance of server 
+                    using Javascript, HTML, and CSS style. I am currently working as an IT Technician for a security
+                    company
+                    named BTI Communications Group providing technical support to clients and performing monitoring and
+                    maintenance of server
                     based environments. I have a passion for technology and enjoy solving problems. I am currently
-                    looking to work as a Software Engineer at an 
-
+                    looking to work as a Software Engineer at an
                 </p>
                 <div class="tab-titles">
                     <h2 class="tab-links skills-tab active-link" onclick="opentab('skills')">Skills</h2>
@@ -109,91 +108,87 @@
                 <div class="tab-contents " id="experience">
                     <ul>
                         <li>
-                            <span>IT Helpdesk and onsite Technician</span><br><strong>BTI Communications Group</strong> 
-                            <p>2021 to Present</p></li>
-                        <li><span>IT Helpdesk and onsite Technician</span><br><strong>IT Traininig & Consulting </strong>
-                            <p>2019-2021</p></li>
+                            <span>IT Helpdesk and onsite Technician</span><br><strong>BTI Communications Group</strong>
+                            <p>2021 to Present</p>
+                        </li>
+                        <li><span>IT Helpdesk and onsite Technician</span><br><strong>IT Traininig & Consulting
+                            </strong>
+                            <p>2019-2021</p>
+                        </li>
                     </ul>
                 </div>
-               
                 <div class="tab-contents" id="education">
                     <ul>
-                        <li><span>Cal State Long Beach University</span><br><strong>Bachelors Degree in Computer Science</strong>
-                            <p>2015-2019</p></li>
+                        <li><span>Cal State Long Beach University</span><br><strong>Bachelors Degree in Computer
+                                Science</strong>
+                            <p>2015-2019</p>
+                        </li>
                         <li><span>Rio Hondo College</span><br><strong>Associates Degree in Math and Science</strong>>
-                            <p>2010-2015 </p></li>
+                            <p>2010-2015 </p>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
-        <!-- --------------Projects-------------------- -->
+
+    <!-- --------------Projects-------------------- -->
     <section id="projects">
         <h1>Projects</h1>
         <div class="project-container">
-           
-            <div class="project">
+            <div class="project ">
                 <img src="/images/mypetwebsite.png" alt="">
                 <div class="description">
                     <h2>My pet project</h2>
-                    <p>This is my first custom-built website inspired by my beagle Finn. 
-                        The purpose of the website is to create a pet biography with 
-                        a photo gallery to showcase all my beagle's great moments.  
-                       
-
-                       </p>
-                       <p>
-                         learn how to create the photo gallery, photo slide and contact us sections 
-                         which were the most challenging. Aquired knowledge on how to purchase domain name and host 
-                         website on github pages. 
-                      
-                       </p>
-                       <p> 
+                    <p>This is my first custom-built website inspired by my beagle Finn.
+                        The purpose of the website is to create a pet biography with
+                        a photo gallery to showcase all my beagle's great moments.
+                    </p>
+                    <p>
+                        learn how to create the photo gallery, photo slide and contact us sections
+                        which were the most challenging. Aquired knowledge on how to purchase domain name and host
+                        website on github pages.
+                    </p>
+                    <p>
                         Technolgies used: Javascript, HTML, CSS, Font Awesome, and EMailJS email service.
                         Members in group: Just myself
-                       </p>
-                     <div class="button-link">
+                    </p>
+                    <div class="button-link">
                         <a href="https://finnthecutebeagle.com">Live Site</a>
-                     </div>
+                    </div>
                 </div>
             </div>
-            <div class="project">
+            <div class="project ">
                 <img src="/images/myportfolio.png" alt="">
                 <div class="description">
                     <h2>My Web Portfolio</h2>
-                    <p>Created a personal portfolio to re-test my skills in Front end engineering. 
-                        All sections were created by researching some beautiful websites to get some ideas. 
-
-                       
-                        
-                       
+                    <p>Created a personal portfolio to re-test my skills in Front End Developing.
+                        All sections were created by researching some beautiful websites to get some ideas.
                     </p>
-
-                        <p>
-                            Used a tutorial to learn how to use after and before to create sliding 
-                            tab in about section. Learn how to better organize and structure HTML with CSS and 
-                            Javascript. Used My pet website as notes to set up Contact us section javascript EMialJS.
-                        </p>
-                        <p>
-                            Technologies used: Javascript, HTML, CSS, Font Awesome, and EMailJS email service.
-                            Members in group: Just myself
-                       </p>
-                        </p>
-                     <div class="button-link">
-
-                         <a href=" https://jvargas7130.github.io/Portfolio/">Live Site</a>
-                     </div>
+                    <p>
+                        Used a tutorial to learn how to use after and before to create sliding
+                        tab in about section. Learn how to better organize and structure HTML with CSS and
+                        Javascript. Used My pet website as notes to set up Contact us section javascript EMialJS.
+                    </p>
+                    <p>
+                        Technologies used: Javascript, HTML, CSS, Font Awesome, and EMailJS email service.
+                        Members in group: Just myself
+                    </p>
+                    </p>
+                    <div class="button-link">
+                        <a href=" https://jvargas7130.github.io/Portfolio/">Live Site</a>
+                    </div>
                 </div>
             </div>
-         
         </div>
     </section>
+
     <!-- --------------------contact---------------------- -->
     <section id="contact-title">
-         <div class="container contact-container">
+        <div class="container contact-container">
             <div class="contact-title">
-                <h1>Contact</h1>
-                <p>me through email or social media</p>
+                <h1>Contact Me</h1>
+                <p>through email or social media</p>
             </div>
             <div class="social-icons">
                 <a href="https://linkedin.com/in/jesusvargas7130"><i class="fa-brands fa-linkedin"></i></a>
@@ -205,25 +200,28 @@
         <div class="container">
             <div id="error_message"></div>
             <form>
-               <div class="row">
-                    <input id="name" class="input-text" type="text" name="Name" placeholder="Your name" required> 
-                    <input id="email" class="input-text" type="text"  name="email" placeholder="Your email" required> 
-               </div>
-                <div>
-                    <textarea id="message" class="input-text" name="subject" placeholder="Your message" ></textarea>
+                <div class="row">
+                    <input id="name" class="input-text" type="text" name="Name" placeholder="Your name" required>
+                    <input id="email" class="input-text" type="text" name="email" placeholder="Your email" required>
                 </div>
-                 <input type="button" id="btn"  value="Submit" onclick="return validation()">  <!-- had to change button type from submit to button to be able to send email  -->
+                <div>
+                    <textarea id="message" class="input-text" name="subject" placeholder="Your message"></textarea>
+                </div>
+                <input type="button" id="btn" value="Submit" onclick="return validation()">
+                <!-- had to change button type from submit to button to be able to send email  -->
                 <!-- <button type="button" id="btn"  value="Submit" onclick="return validation()"></button> -->
-            </form>      
+            </form>
         </div>
     </section>
 
-     <footer>
+    <!-- --------------------Footer---------------------- -->
+    <footer>
         <div class="container">
-             <p>Jesse Vargas <i class="fa-solid fa-copyright"></i></p>
+            <p>Jesse Vargas <i class="fa-solid fa-copyright"></i></p>
         </div>
-       
-     </footer>
-       <script type="text/javascript" src="app.js"></script>
+
+    </footer>
+    <script type="text/javascript" src="app.js"></script>
 </body>
+
 </html>
