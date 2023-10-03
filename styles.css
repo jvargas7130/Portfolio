@@ -199,6 +199,9 @@ nav li a:hover {
   display: none;
 }
 
+.button-link{
+  display: inline-block;
+}
 /* -------------Projects----------------- */
 
 #projects {
@@ -231,8 +234,8 @@ nav li a:hover {
   border-top-right-radius: 15px;
 }
 .project .description {
-  height: 100%;
-  width: 100%;
+  display: flex;
+  flex-flow: column;
   background-color: whitesmoke;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -250,6 +253,8 @@ nav li a:hover {
   color: black;
   margin-top: 5%;
   margin-bottom: 5%;
+  margin-bottom: 5%;
+  flex-grow: 1; /* stretches out content to fit height of box. Issue was button at bottom was not align with second container button*/
 }
 
 .button-link a {
