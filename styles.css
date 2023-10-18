@@ -77,8 +77,8 @@ nav li a:hover {
   height: 735px;
   background-image: url(images/background.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  max-height: 3000px;
+  background-size: 100% 100%;
+  max-height: 100%;
 }
 
 .landing .landing-text p {
@@ -381,11 +381,21 @@ i {
   font-size: 14px;
   transition: all 0.5s ease;
 }
+
+
+
+
+
 @media screen and (max-width: 1024px) {
   * {
     align-items: center;
     box-sizing: border-box;
   }
+  .landing {
+   
+    background-image: none;
+  }
+  
 
   h1 {
     font-size: 55px;
